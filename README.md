@@ -17,4 +17,4 @@ ETL pipeline that loads the data, performs some transformations, and writes the 
 - [Postgres data exporter](https://github.com/ch1nmay7898/DE-HW/blob/main/HW2/green_taxi_etl/quarterly_dataframe_to_postgres.py) written in Python, writes the dataset to the table called `green_taxi` in a schema `mage`.
     - Uses `dev` environment to connect to the Postgres instance running in the Docker container.
 - [GCP data exporter](https://github.com/ch1nmay7898/DE-HW/blob/main/HW2/green_taxi_etl/df_to_parquet_gcs.py) writes the data as Parquet files to a bucket in GCP, partioned by `lpep_pickup_date`.
-- Schedule your pipeline to run daily at 5AM UTC.
+- [Trigger](https://github.com/ch1nmay7898/DE-HW/blob/main/HW2/green_taxi_etl/triggers.yaml) runs the pipeline daily at 5AM UTC.
